@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>adding two different numbers</title>
+    </head>
+<body>
+
+<p>Click the button to demonstrate the prompt box.</p>
+
+<button onclick="myFunction()">adding numbers</button>
+<div></div>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let person = alert("this time i want two numbers im going to add together");
+
+  let a = +prompt("Enter first number");
+  let b = +prompt("Enter second number");
+
+  
+    
+  
+
+  let newDiv = document.createElement("div"); 
+  // and give it some content 
+  var newContent = document.createTextNode(`together those numbers make ${a+b}!`); 
+  // add the text node to the newly created div
+  newDiv.appendChild(newContent);  
+
+  // add the newly created element and its content into the DOM 
+  var currentDiv = document.getElementById("div1"); 
+  document.body.insertBefore(newDiv, currentDiv); 
+
+  let list = document.getElementById("newDiv");   // Get the <ul> element with id="myList"
+      newDiv.removeChild(newDiv.childNodes[1]);   
+  
+
+}
+
+
+</script>
+
+</body>
+</html>
